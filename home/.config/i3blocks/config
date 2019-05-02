@@ -1,0 +1,47 @@
+# i3blocks config file
+# vim: ft=dosini
+
+command=/usr/lib/i3blocks/$BLOCK_NAME
+separator_block_width=10
+markup=none
+
+[mpd]
+interval=once
+signal=9
+command=i3mpd
+separator=true
+
+[volume]
+interval=once
+command=i3volume
+signal=10
+separator=true
+
+[brightness]
+interval=once
+command=i3brightness
+signal=11
+separator=true
+
+[memory]
+label=mem
+separator=false
+interval=30
+
+[cpu_usage]
+label=cpu
+interval=10
+separator=true
+
+[battery]
+command=i3battery
+interval=15
+separator=false
+
+[temperature]
+label=🌡️
+interval=15
+
+[time]
+command=date '+%Y-%m-%d %H:%M'
+interval=60
