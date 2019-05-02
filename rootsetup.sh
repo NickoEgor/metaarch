@@ -41,7 +41,12 @@ $instcmd xf86-input-libinput
 $instcmd acpi acpid
 systemctl enable acpid.service
 
-$instcmd bash-completion linux-headers python3
+$instcmd bash-completion linux-headers python3 git
 # bash-completion - autocompletes user commands in bash
 # linux-headers - needed for compiling linux programs
 # python3 - needed to run a lot of programs
+# git - for next steps of installation
+
+cd ~/home/"$name"
+git clone https://github.com/NickoEgor/metaarch
+chown -R "$name":users metaarch

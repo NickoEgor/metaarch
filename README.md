@@ -13,4 +13,8 @@ curl https://raw.githubusercontent.com/NickoEgor/metaarch/master/livecd.sh > liv
 ```bash
 curl https://raw.githubusercontent.com/NickoEgor/metaarch/master/rootsetup.sh > rootsetup.sh && bash rootsetup.sh && rm rootsetup.sh
 ```
-6. System is ready
+6. Relogin as your new user and run:
+```bash
+bash ~/metaarch/graphicsetup.sh
+```
+7. System is ready
