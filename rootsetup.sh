@@ -47,6 +47,6 @@ $instcmd bash-completion linux-headers python3 git
 # python3 - needed to run a lot of programs
 # git - for next steps of installation
 
-cd ~/home/"$name"
+cd /home/"$name"
 git clone https://github.com/NickoEgor/metaarch
 chown -R "$name":users metaarch
