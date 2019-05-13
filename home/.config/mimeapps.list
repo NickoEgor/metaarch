@@ -1,0 +1,10 @@
+# vim: ft=dosini
+
+[Default Applications]
+text/x-c=nvim.desktop
+text/x-python=nvim.desktop
+inode/directory=vifmrun.desktop
+text/html=qutebrowser.desktop
+x-scheme-handler/http=linkhandler.desktop
+x-scheme-handler/https=linkhandler.desktop
+application/pdf=zathura.desktop

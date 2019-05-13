@@ -16,7 +16,7 @@ cd ..
 rm -rf st/
 
 # install text editor, browser, notifications, screenshots, wallpapers, video player, file manager, image viewer and composite manager
-sudo $instcmd gvim qutebrowser dunst scrot xwallpaper mpv vifm sxiv xcompmgr
+sudo $instcmd gvim qutebrowser dunst scrot xwallpaper mpv vifm sxiv compton
 
 # install music player
 sudo $instcmd mpd mpc ncmpcpp
@@ -40,6 +40,9 @@ sudo $instcmd libreoffice-fresh
 
 # install fonts
 sudo $instcmd noto-fonts-emoji
+
+# useful features
+sudo $instcmd youtube-dl
 
 # install user configuration
 cp -r ~/metaarch/home/. ~/

@@ -1,4 +1,5 @@
 set nocompatible
+
 filetype plugin on
 set laststatus=0
 set encoding=utf-8
