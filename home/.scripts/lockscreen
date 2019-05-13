@@ -1,0 +1,6 @@
+#!/bin/sh
+
+pgrep -x i3lock >/dev/null && exit
+
+lock="i3lock -e -f -c 303030 -i $HOME/lock.png"
+$lock && sleep 1 && xset dpms force off

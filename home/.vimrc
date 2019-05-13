@@ -1,6 +1,7 @@
 set nocompatible
 
 filetype plugin on
+syntax on
 set laststatus=0
 set encoding=utf-8
 set autoindent

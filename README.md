@@ -13,8 +13,18 @@ curl https://raw.githubusercontent.com/NickoEgor/metaarch/master/livecd.sh > liv
 ```bash
 curl https://raw.githubusercontent.com/NickoEgor/metaarch/master/rootsetup.sh > rootsetup.sh && bash rootsetup.sh && rm rootsetup.sh
 ```
-6. Relogin as your new user and run:
+6. Login as your new user and run:
 ```bash
 bash ~/metaarch/graphicsetup.sh
 ```
-7. System is ready
+7. Login again and the system is ready
+
+![System's look](pics/ready.png)
+
+## Basic movements
+
++ `super-t` — Terminal ([st](https://github.com/NickoEgor/st))
++ `super-b` — Browser ([QuteBrowser](https://github.com/qutebrowser/qutebrowser))
++ `super-p` — Power management
++ `super-m/super-shift-m` — Mount/unmount devices
++ `super-i` — Music player ([mpd](https://github.com/MusicPlayerDaemon/MPD) + [ncmpcpp](https://github.com/arybczak/ncmpcpp))

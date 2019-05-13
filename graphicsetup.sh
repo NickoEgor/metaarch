@@ -15,8 +15,9 @@ sudo make install
 cd ..
 rm -rf st/
 
-# install text editor, browser, notifications, screenshots, wallpapers, video player, file manager, image viewer and composite manager
-sudo $instcmd gvim qutebrowser dunst scrot xwallpaper mpv vifm sxiv compton
+# install text editor, browser, notifications, screenshots, 
+# wallpapers, video player, file manager, image viewer, composite manager and other
+sudo $instcmd gvim qutebrowser dunst scrot xwallpaper mpv vifm sxiv compton dmenu
 
 # install music player
 sudo $instcmd mpd mpc ncmpcpp
@@ -43,6 +44,16 @@ sudo $instcmd noto-fonts-emoji
 
 # useful features
 sudo $instcmd youtube-dl
+
+# mounting mtp filesystems
+sudo $instcmd libmtp
+git clone https://github.com/phatina/simple-mtpfs
+cd simple-mtpfs
+./autogen.sh
+mkdir build && cd build
+../configure
+make
+sudo make install
 
 # install user configuration
 cp -r ~/metaarch/home/. ~/
